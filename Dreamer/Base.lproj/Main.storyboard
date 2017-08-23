@@ -163,14 +163,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tgU-UE-DKU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-2" translatesAutoresizingMaskIntoConstraints="NO" id="tgU-UE-DKU">
                                 <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2B2-F2-1e5"/>
                                     <constraint firstAttribute="height" constant="100" id="zUl-Ze-pzh"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-fo-CtE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-fo-CtE">
                                 <rect key="frame" x="139" y="72" width="220" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Qh4-cv-mqd"/>
@@ -179,7 +179,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Price" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Buh-Eq-3rx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Buh-Eq-3rx">
                                 <rect key="frame" x="139" y="126" width="220" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="c1H-hp-Rk7"/>
@@ -195,7 +195,7 @@
                                     <constraint firstAttribute="height" constant="100" id="T0j-oF-zM5"/>
                                 </constraints>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Details" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0KU-2D-vg2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Details" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0KU-2D-vg2">
                                 <rect key="frame" x="16" y="180" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JPr-7b-xPK"/>
@@ -261,6 +261,12 @@
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="0KU-2D-vg2" id="6bF-w2-Sng"/>
+                        <outlet property="priceField" destination="Buh-Eq-3rx" id="vKf-Yv-PhC"/>
+                        <outlet property="storePicker" destination="J06-qY-8El" id="KWt-mT-PfP"/>
+                        <outlet property="titleField" destination="QKg-fo-CtE" id="IbJ-44-vn5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8E1-OY-XgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,6 +297,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="default-2" width="360" height="270"/>
         <image name="new-macbook-2016_thumb" width="750" height="422"/>
     </resources>
     <inferredMetricsTieBreakers>
