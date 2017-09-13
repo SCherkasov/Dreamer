@@ -220,6 +220,9 @@
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="28q-Zo-79E" eventType="touchUpInside" id="Ofa-Hn-G0n"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIa-PQ-PWh">
                                 <rect key="frame" x="158" y="340" width="59.5" height="36"/>
@@ -277,7 +280,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U53-2t-bgs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VUr-7d-eos">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VUr-7d-eos">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
