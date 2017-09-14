@@ -194,6 +194,9 @@
                                     <constraint firstAttribute="width" constant="100" id="EAj-kk-gIR"/>
                                     <constraint firstAttribute="height" constant="100" id="T0j-oF-zM5"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="28q-Zo-79E" eventType="touchUpInside" id="sbp-GO-R5s"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Details" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0KU-2D-vg2">
                                 <rect key="frame" x="16" y="180" width="343" height="30"/>
@@ -262,12 +265,16 @@
                     <navigationItem key="navigationItem" title="add / edit" id="EAW-jH-Oyv">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="BuG-dJ-781">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="28q-Zo-79E" id="Tvb-Gh-hqd"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="0KU-2D-vg2" id="6bF-w2-Sng"/>
                         <outlet property="priceField" destination="Buh-Eq-3rx" id="vKf-Yv-PhC"/>
                         <outlet property="storePicker" destination="J06-qY-8El" id="KWt-mT-PfP"/>
+                        <outlet property="thumgImg" destination="tgU-UE-DKU" id="fHn-D2-tPq"/>
                         <outlet property="titleField" destination="QKg-fo-CtE" id="IbJ-44-vn5"/>
                     </connections>
                 </viewController>
